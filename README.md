@@ -1,13 +1,9 @@
 # END-TO-END-SALES-PERFORMANCE-AND-PROFITABILITY-ANALYSIS
 
-## BACKGROUND AND SCENARIO
+## BACKGROUND AND SCENARIO 
 This project analyses 20,000 transactions across 600 customers from January to December 2023 of a beverage distribution company operating across 10 stores in the United States, selling 8 product categories including Coffee, Tea, Soft Drinks, Water, Sports Drinks, Energy Drinks, Alcoholic Beverages, and Juice.
 
-<img width="1230" height="687" alt="image" src="https://github.com/user-attachments/assets/08a14fff-715e-4b59-8365-8318bbd9b1b5" />
-
-
-
-## TABLE OF CONTENTS
+## TABLE OF CONTENTS 
 
 1. [Background and Scenario](#background-and-scenario)
 2. [Project Overview](#project-overview)
@@ -17,24 +13,26 @@ This project analyses 20,000 transactions across 600 customers from January to D
 6. [Data Modelling](#data-modelling)
 7. [DAX Measures Calculated and Their Business Importance](#dax-measures-calculated-and-their-business-importance)
 8. [Insights and Recommendations](#insights-and-recommendations)
-9. [Limitations](#limitations)
-10. [How This Project Improved My Skills](#how-this-project-improved-my-skills)
-11. [Challenges Faced During the Project](#challenges-faced-during-the-project)
-12. [Conclusion](#conclusion)
-13. [Author](#author)
+9. [Dashboards Designs / Visualizations](#dashboards-designs--visualizations)
+10. [Limitations](#limitations)
+11. [How This Project Improved My Skills](#how-this-project-improved-my-skills)
+12. [Challenges Faced During the Project](#challenges-faced-during-the-project)
+13. [Conclusion](#conclusion)
+14. [Author](#author)
 
-## PROJECT OVERVIEW
+### PROJECT OVERVIEW
 This project is a complete end-to-end sales analytics solution built entirely in Microsoft Excel using:
 
-  -	Power Query Editor (Data Cleaning & Transformation)
+  1. Power Query Editor (Data Cleaning & Transformation)
   
-  -	Power Pivot (Data Modeling & DAX)
+  2. Power Pivot (Data Modeling & DAX)
   
-  -	Pivot Tables & Pivot Charts
+  3. Pivot Tables & Pivot Charts
   
-  -	Interactive Dashboard Design
+  4. Interactive Dashboard Design
 
-The goal of the project was to transform raw transactional sales data into an executive-level business intelligence solution capable of answering:
+The goal of the project was to transform raw transactional sales data into an executive level business intelligence solution capable of answering:
+
   -	Is the business profitable?
   
   -	Which categories drive revenue and profit?
@@ -83,15 +81,15 @@ Management need to understand:
 
 ### TOOLS AND SKILLS USED 
 
-  -	Microsoft Excel-Power Pivot - Star schema data modelling, relationship management
+1. Microsoft Excel Power Pivot - Star schema data modelling, relationship management
     
-  -	Power Query Editor - Data connection, cleaning, transformation, Calendar Table creation
+2. Power Query Editor - Data connection, cleaning, transformation, Calendar Table creation
     
-  -	Pivot Tables- Data summarisation and analysis
+3. Pivot Tables - Data summarisation and analysis
     
-  -	Pivot Charts- Visual storytelling and interactive dashboard design
+4. Pivot Charts - Visual storytelling and interactive dashboard design
     
-  -	DAX (Data Analysis Expressions)- KPI measures, time intelligence, ratio calculations
+5. DAX (Data Analysis Expressions)- KPI measures, time intelligence, ratio calculations
 
 ## DATASET OVERVIEW
 
@@ -115,7 +113,15 @@ Management need to understand:
   
   - Payment methods: Cash, Credit Card, Debit Card, Online Payment
 
-<img width="1146" height="575" alt="fact table only  pq" src="https://github.com/user-attachments/assets/9bb9f5af-1f7c-4dea-859b-7748b996dc31" />
+**SAMPLE PREVIEW**
+
+| Order Date | Product ID | Customer ID | Sales Person ID | Quantity Sold | Quantity Returned | Payment Method |
+|------------|------------|-------------|-----------------|---------------|-------------------|-----------------|
+|4/13/2023|17|482|3|14|1|Credit Card|
+|7/20/2023|41|181|7|39|5|Cash|
+|6/6/2023|89|61|6|9|0|Cash|
+|2/21/2023|66|55|7|36|5|Debit Card|
+|8/25/2023|86|436|6|53|4|Online Payment|
 
 
 ## DATA CLEANING PROCESS
@@ -127,7 +133,7 @@ Duplicate date entries initially caused relationship issues during data modeling
 
 <img width="1593" height="632" alt="date PQ" src="https://github.com/user-attachments/assets/2d0c0e74-42ba-4766-8b53-c607d81836ba" />
 
-2. **Created Time Intelligence Columns**
+2. **Created Time Intelligence Columns after the date column was created in the first step**
 
 Generated:
   - Month Name
@@ -155,11 +161,11 @@ Customers were segmented into:
 
 4. **Standardized column for Net calculations called Net Quantity and also created consistent calculations for**:
 
-  - Revenue
-  - COGS
-  - Gross Profit
-  - Profit Margin
-  - Return-adjusted metrics
+  - 📊 Revenue
+  - 🗃️ COGS
+  - 📈 Gross Profit
+  - 💹 Profit Margin
+  - ⬇️ Return-adjusted metrics
 
 <img width="1592" height="612" alt="fact pq" src="https://github.com/user-attachments/assets/bc346f61-825e-4658-975f-5bfde469fd09" />
 
@@ -174,7 +180,7 @@ Modelling relationships allows DAX measures to query across all tables simultane
 
 ### DAX MEASURES CALCULATED AND THEIR BUSINESS IMPORTANCE
 
-1. **Revenue & Top-Line Performance**
+1. **Revenue & Top-Line Performance**  📊
 
   - TOTAL REVENUE (The foundational gross sales metric)
   
@@ -182,7 +188,7 @@ Modelling relationships allows DAX measures to query across all tables simultane
   
   - REVENUE LOSS TO RETURN (Direct leakages from top-line revenue)
 
-2. **Profitability & Costs**
+2. **Profitability & Costs** 💰
    
   - TOTAL COGS (Cost of Goods Sold, the primary expense)
   
@@ -190,15 +196,15 @@ Modelling relationships allows DAX measures to query across all tables simultane
   
   - PROFIT MARGIN (The efficiency of turning revenue into profit)
 
-3. **Sales Volume & Returns**
+3. **Sales Volume & Returns**  ⏬
    
   - NET QTY SOLD (Physical volume driving the revenue)
   
   - RETURN RATE (Product performance and quality health check)
 
-4. **Month-over-Month (MoM) Growth Metrics**
+4. **Month-over-Month (MoM) Growth Metrics**  📆
    
-These compare the current month's performance to the Prior Month (PM) to show business momentum:
+   These compare the current month's performance to the Prior Month (PM) to show business momentum:
 
   - MOM NET REVENUE
   
@@ -208,9 +214,9 @@ These compare the current month's performance to the Prior Month (PM) to show bu
   
   - MOM NET QTY SOLD
 
-5. **Previous Month (PM) Baseline Measures**
+5. **Previous Month (PM) Baseline Measures** ⏲️
    
-These are the technical calculations supporting the MoM growth metrics above:
+   These are the technical calculations supporting the MoM growth metrics above:
   
   - PM NET REVENUE
   
@@ -220,7 +226,7 @@ These are the technical calculations supporting the MoM growth metrics above:
   
   - PM NET QTY SOLD
 
-6. **Customer & Salesperson Insights**
+6. **Customer & Salesperson Insights**  🧑‍🤝‍🧑 🗺️
    
   - TOTAL CUSTOMERS (Size of the active customer base)
   
@@ -237,61 +243,70 @@ These are the technical calculations supporting the MoM growth metrics above:
 
 ### INSIGHTS 
 
-   **Revenue & Profitability**
+  **Revenue & Profitability** 💰
 
-  - Net revenue reached $5.01M for 2023, with gross profit of $2.11M at a 42.1% margin — a healthy result, but margin is under quiet pressure as COGS grew at         9.1% MoM versus revenue at 8.8% which shows costs are rising faster than income.
+  - Net revenue reached $5.01M for 2023, with gross profit of $2.11M at a 42.1% margin.
+    > This is a healthy result, but margin is under quiet pressure as COGS grew at 9.1% MoM versus revenue at 8.8% which shows costs are rising faster                  than income.
   
-  - $438K in revenue was lost to returns representing the gap between gross sales of $5.45M and net revenue. At an 8% return rate, this is recoverable and            worth investigating by product category.
+  - $438K in revenue was lost to returns representing the gap between gross sales of $5.45M and net revenue.
+    >At an 8% return rate, this is recoverable and worth investigating by product category.
     
-    **Product Performance**
+  **Product Performance** ☕
 
-  - Tea is the most profitable category at 75.1% margin, yet ranks only 5th in revenue at $449K. A 20% uplift in Tea sales would add approximately $67K in profit     at near-zero additional cost, this is the highest-return action available in the data.
+  - Tea is the most profitable category at 75.1% margin, yet ranks only 5th in revenue at $449K. A 20% uplift in Tea sales would add approximately $67K in profit     at near-zero additional cost.
+    > This is the highest return action available in the data.
   
-  - Juice is a drain on resources, generating only 13.4% margin on $353K revenue, yielding just $42K profit annually. It consumes shelf space, inventory, and        salesperson effort for less than 2% of total profit.
+  - Juice is a drain on resources, generating only 13.4% margin on $353K revenue, yielding just $42K profit annually.
+    > It consumes shelf space, inventory, and salesperson effort for less than 2% of total profit.
   
-  - Soft Drink leads revenue at $1.1M with a strong 58% margin. it is the business's most valuable volume category.
+  - Soft Drink leads revenue at $1.1M with a strong 58% margin.
+    > It is the business's most valuable volume category.
   
-  **Store & Salesperson Performance**
+  **Store & Salesperson Performance**  🧑‍🤝‍🧑
 
-  - Crystal Franco at Myers-Lopez leads revenue at $519K, but Dustin Manning at Novak PLC leads profit margin at 43.4% despite ranking 9th in revenue — he sells      a smarter product mix. Understanding his category breakdown could unlock margin gains across other stores.
+  - Crystal Franco at Myers-Lopez leads revenue at $519K, but Dustin Manning at Novak PLC leads profit margin at 43.4% despite ranking 9th in revenue — he sells      a smarter product mix.
+    > Understanding his category breakdown could unlock margin gains across other stores.
 
-  - All 10 stores fall within a 7.5% revenue band ($483K–$519K) which is unusually flat for a 10-store operation, suggesting a shared operational ceiling worth       investigating.
+  - All 10 stores fall within a 7.5% revenue band ($483K–$519K) which is unusually flat for a 10-store operation.
+    > Suggesting a shared operational ceiling worth investigating.
 
- **Customer and Geographic Insights**
+ **Customer and Geographic Insights** 🗺️
 
-  - Gen X and Millennials together drive 60% of revenue ($3.01M combined). Baby Boomers contribute $1.25M but represent a declining demographic, Gen Z at only        $748K signals an underdeveloped pipeline that needs investment now.
+  - Gen X and Millennials together drive 60% of revenue ($3.01M combined). Baby Boomers contribute $1.25M but represent a declining demographic.
+    > Gen Z at only $748K signals an underdeveloped pipeline that needs investment now.
 
-  - Washington leads all states in profit margin at 44.6% despite ranking 4th in revenue. Its customers buy a more profitable product mix. Replicating                Washington's product emphasis in Michigan, the revenue leader could add $90K+ in annual profit with no new customer acquisition.
+  - Washington leads all states in profit margin at 44.6% despite ranking 4th in revenue. Its customers buy a more profitable product mix.
+    >Replicating Washington's product emphasis in Michigan, the revenue leader could add $90K+ in annual profit with no new customer acquisition.
 
-  - Male customers generate $2,568,282 (51.3%) and Female customers $2,440,230 (48.7%) — a near-equal split indicating healthy gender diversification with no   
-    over-reliance on either segment.
+  - Male customers generate $2,568,282 (51.3%) and Female customers $2,440,230 (48.7%)
+    > An almost equal split indicating healthy gender diversification with no over-reliance on either segment.
 
-  **Payment Method Insight**
+  **Payment Method Insight** 💳
   - Payment methods are evenly distributed across Online (25.5%), Credit Card (25.2%), Cash (24.8%), and Debit Card (24.5%). 
-    This is a healthy diversification with no single channel risk.
+    > This is a healthy diversification with no single channel risk.
 
   ## RECOMMENDATIONS
 
-  - Push Tea aggressively, a 75.2% margin with only 5th-place revenue is the clearest missed opportunity. Promote Tea through salesperson incentives, bundle          deals,and featured placement. A 20% uplift in Tea revenue from $449K to $539K would add approximately $68K in profit at near-zero additional cost.
+  * Push Tea aggressively, a 75.2% margin with only 5th-place revenue is the clearest missed opportunity. Promote Tea through salesperson incentives, bundle          deals,and featured placement. A 20% uplift in Tea revenue from $449K to $539K would add approximately $68K in profit at near-zero additional cost.
   
-  - Review Juice and Alcoholic Beverage SKUs: combined, these two categories generate $127,125 in profit from $752,814 in revenue (16.9% blended margin). 
+  * Review Juice and Alcoholic Beverage SKUs: combined, these two categories generate $127,125 in profit from $752,814 in revenue (16.9% blended margin). 
     Audit individual SKUs, reprice the lowest-margin products, or replace them with higher-margin alternatives. Resources deployed here would generate far            greater returns in Tea, Soft Drink, or Sports Drink.
   
-  - Investigate the COGS growth rate — at 9.1% MoM versus revenue at 8.8%, costs are compounding faster than income. Identify which categories are driving the        COGS increase and whether supplier pricing or product mix shift is the root cause.
+  * Investigate the COGS growth rate — at 9.1% MoM versus revenue at 8.8%, costs are compounding faster than income. Identify which categories are driving the        COGS increase and whether supplier pricing or product mix shift is the root cause.
   
-  - Study Dustin Manning's product mix, at 43.3% margin from 9th-place revenue, he sells smarter than almost everyone. His Tea revenue of $53,253 at 75.9% margin     is the category highlight. Understanding and coaching his approach across the team could recover $10K+ in profit without any volume increase.
+  * Study Dustin Manning's product mix, at 43.3% margin from 9th-place revenue, he sells smarter than almost everyone. His Tea revenue of $53,253 at 75.9% margin     is the category highlight. Understanding and coaching his approach across the team could recover $10K+ in profit without any volume increase.
   
-  - Build a Gen Z acquisition strategy now, at 14.9% of revenue and declining as a share, this segment needs investment before the gap widens. Energy Drink           (37.2% margin) and Sports Drink (48.7% margin) both index well with younger demographics and carry strong margins which is a natural entry point for Gen Z-       targeted promotions.
+  * Build a Gen Z acquisition strategy now, at 14.9% of revenue and declining as a share, this segment needs investment before the gap widens. Energy Drink           (37.2% margin) and Sports Drink (48.7% margin) both index well with younger demographics and carry strong margins which is a natural entry point for Gen Z-       targeted promotions.
 
-  - Replicate Washington's product mix in high revenue states. Washington customers gravitate toward higher margin products. Run the same category emphasis as a      targeted promotion in Michigan and Virginia the top two revenue states to convert volume leadership into margin leadership.
+  * Replicate Washington's product mix in high revenue states. Washington customers gravitate toward higher margin products. Run the same category emphasis as a      targeted promotion in Michigan and Virginia the top two revenue states to convert volume leadership into margin leadership.
   
-  - Investigate the return rate by category, the overall 8.0% rate costs $438,298 annually. If one or two categories are driving disproportionate returns (Tea's      8.3% vs Coffee's 7.8% suggests variation exists), targeted quality or customer-targeting improvements in the worst-performing category could recover $50K+ in     revenue.
+  * Investigate the return rate by category, the overall 8.0% rate costs $438,298 annually. If one or two categories are driving disproportionate returns (Tea's      8.3% vs Coffee's 7.8% suggests variation exists), targeted quality or customer-targeting improvements in the worst-performing category could recover $50K+ in     revenue.
   
-  - Investigate the shared $36,517 ceiling across all 10 stores — the unusually flat performance band suggests a common constraint affecting all stores equally.      Whether it is a shared inventory system, supplier limitation, or customer base overlap, identifying and removing this ceiling is the highest-potential            operational action available.
+  * Investigate the shared $36,517 ceiling across all 10 stores — the unusually flat performance band suggests a common constraint affecting all stores equally.      Whether it is a shared inventory system, supplier limitation, or customer base overlap, identifying and removing this ceiling is the highest-potential            operational action available.
 
 ### DASHBOARDS DESIGNS / VISUALIZATIONS
 
-### WIREFREAMING
+## WIREFREAMING
 
 Before building anything in Excel, I planned the dashboard layout in excel, mapping out which chart goes where and why. This step ensured the final dashboard tells a logical story rather than being a random collection of visuals.
 
