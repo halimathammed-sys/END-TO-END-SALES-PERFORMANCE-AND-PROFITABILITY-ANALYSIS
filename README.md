@@ -1,5 +1,9 @@
 # END-TO-END-SALES-PERFORMANCE-AND-PROFITABILITY-ANALYSIS
 
+### 📊 [Click Here to View & Download the Interactive Excel Workbook](./Drinco_Sales_Analysis.xlsx)
+
+> **Note:** Since this advanced business intelligence tool uses Power Pivot data modeling and DAX measures, please download the raw `.xlsx` file and open it locally on your desktop Microsoft Excel application to interact with the slicers and dynamic timeline filters.
+
 ## BACKGROUND AND SCENARIO 
 This project analyses 20,000 transactions across 600 customers from January to December 2023 of a beverage distribution company operating across 10 stores in the United States, selling 8 product categories including Coffee, Tea, Soft Drinks, Water, Sports Drinks, Energy Drinks, Alcoholic Beverages, and Juice.
 
