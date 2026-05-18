@@ -358,7 +358,7 @@ Before building anything in Excel, I planned the dashboard layout in excel, mapp
 
 ### HOW THIS PROJECT IMPROVED MY SKILLS
 
-  - Data modeling: Grouping and connecting different data tables together behind the scenes so your sales, customers, and products can connect to each other          seamlessly.
+  - Data modeling: Grouping and connecting different data tables together behind the scenes so the sales, customers, and products can connect to each other          seamlessly.
   
   - Power Query transformations: Doing the heavy lifting of cleaning up messy data, removing errors, and shaping it so it is perfectly organized for analysis.
   
@@ -370,7 +370,7 @@ Before building anything in Excel, I planned the dashboard layout in excel, mapp
   
   - Customer segmentation: Breaking down the buyer base into distinct groups, like generations or gender, to figure out exactly who is driving the most profit.
   
-  - Profitability analysis: Digging beneath surface-level sales totals to find out which items, locations, or team members are actually making the most net           profit.
+  - Profitability analysis: Digging beneath surface level sales totals to find out which items, locations, or team members are actually making the most net           profit.
   
   - Time intelligence calculations: Setting up dynamic formulas to compare this month's sales to the previous month or track growth over time
 
@@ -402,6 +402,8 @@ The final Excel dashboard built from scratch using Power Query, Star Schema data
 Halimat Hammed
 
 _Business, Sales and Financial Analyst_
+
+_Email: halimathammed2002@gmail.com_
 
 
 
