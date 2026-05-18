@@ -1,4 +1,4 @@
-# END-TO-END-SALES-PERFORMANCE-AND-PROFITABILITY-ANALYSIS
+# End to End Sales Performance and Profitability Analysis
 
 ### 📊 [Click Here to View & Download the Interactive Excel Workbook](./Drinco%20Sales%20Analysis.xlsx)
 
@@ -310,7 +310,7 @@ Modelling relationships allows DAX measures to query across all tables simultane
 
 ### DASHBOARDS DESIGNS / VISUALIZATIONS
 
-## WIREFREAMING
+## WIREFRAMING
 
 Before building anything in Excel, I planned the dashboard layout in excel, mapping out which chart goes where and why. This step ensured the final dashboard tells a logical story rather than being a random collection of visuals.
 
